@@ -34,7 +34,7 @@ Here are some of the projects I've built.
 ## Technical Skills
 
 *   **Languages:** HTML, CSS, JavaScript (ES6+)
-*   **Frameworks & Libraries:** React, Bootstrap, Express.js
+*   **Frameworks & Libraries:** React, Bootstrap
 *   **Tools & Platforms:** Git, GitHub, Webpack, npm, VS Code
 *   **Design:** Responsive Web Design, UI/UX Fundamentals, Figma, Adobe Photoshop, Adobe Illustrator
 

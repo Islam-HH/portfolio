@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio! I'm a passionate and detail-oriented front-end developer, making a career transition from the world of tax accounting. I have a passion for building responsive, user-friendly, and visually appealing web applications.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Islam-HH/-portfolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Islam-HH/-portfolio/issues"
+  },
+  "homepage": "https://github.com/Islam-HH/-portfolio#readme",
+  "devDependencies": {
+    "vite": "^8.0.0"
+  },
+  "dependencies": {
+    "@fontsource/red-rose": "^5.2.7",
+    "bootstrap": "^5.3.8",
+    "bootstrap-icons": "^1.13.1"
+  }
+}

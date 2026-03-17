@@ -1,0 +1,42 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    text-decoration: none;
+}
+
+/* header styling*/
+
+#header{
+    height: 100px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    font-family: "red rose", sans-serif;
+    font-size: 1.1rem;
+}
+
+#header_social_links i{
+    font-size: 1.8rem;
+    color: #ffffff;
+}
+.mobile-nav-toggle{
+    display: none;
+    font-size: 1.9rem;
+    margin-right: 1rem;
+}
+
+@media (max-width: 768px) {
+    #navbar{
+        display: none;
+    }
+    #header_social_links i{
+        display: none;
+    }
+    .mobile-nav-toggle{
+        display: block;
+    }
+}
+
+/*about section styling*/
+

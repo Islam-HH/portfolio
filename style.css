@@ -1,4 +1,4 @@
-*{
+* {
     margin: 0px;
     padding: 0px;
     list-style: none;
@@ -7,7 +7,7 @@
 
 /* header styling*/
 
-#header{
+#header {
     height: 100px;
     margin-top: 50px;
     background-color: rgba(0, 0, 0, 0.5);
@@ -16,11 +16,11 @@
     font-size: 1.1rem;
 }
 
-#header_social_links i{
+#header_social_links i {
     font-size: 1.8rem;
     color: #ffffff;
 }
-.mobile-nav-toggle{
+.mobile-nav-toggle {
     display: none;
     font-size: 1.9rem;
     margin-right: 1rem;
@@ -40,3 +40,20 @@
 
 /*about section styling*/
 
+#about {
+    padding-top: 350px;
+    background-image: url(./assets/images/hero_bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+}
+
+#about-container {
+    max-width: 600px;
+}   
+
+#about h1 {
+    font-family: "sansation", sans-serif;
+    color: #ffffff;
+}

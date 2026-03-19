@@ -2,7 +2,8 @@
     margin: 0px;
     padding: 0px;
     list-style: none;
-    text-decoration: none;
+    text-decoration: none; 
+    transition: all 0.5s ease;
 }
 
 /* header styling*/
@@ -16,14 +17,48 @@
     font-size: 1.1rem;
 }
 
-#header_social_links i {
+#header_container {
+    height: 100px;
+}
+
+#header_social_links {
+    height: 100px;
+}
+
+.navicons {
+    display: inline-block;
     font-size: 1.8rem;
     color: #ffffff;
 }
+
 .mobile-nav-toggle {
     display: none;
     font-size: 1.9rem;
-    margin-right: 1rem;
+    margin-right: 2.5rem;
+}
+
+.facebook:hover {
+    color: blue;
+    transform: scale(1.2);
+}
+
+.github:hover {
+    color: chocolate;
+    transform: scale(1.2);
+}
+
+.whatsapp:hover {
+    color: green;
+    transform: scale(1.2);
+}
+
+.telephone:hover {
+    color: greenyellow;
+    transform: scale(1.2);
+}
+
+#header a:hover {
+    color: orange;
 }
 
 @media (max-width: 768px) {
@@ -45,15 +80,62 @@
     background-image: url(./assets/images/hero_bg.png);
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    background-position-y: 20%;
+    height: 150vh;
     width: 100%;
 }
 
 #about-container {
-    max-width: 600px;
+    max-width: 650px;
+    padding: 10px 30px;
+    background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.02));
 }   
 
 #about h1 {
     font-family: "sansation", sans-serif;
     color: #ffffff;
+    font-size: 3.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);    
+}
+
+#about p {
+    max-width: 450px;
+    font-family: "sarabun", sans-serif;
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.6);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+@media (max-width: 768px) {
+   #about {
+    padding-top: 380px;
+    background-position: 55%;
+    text-align: center;
+   }
+    #about h1 {
+    font-size: 2rem;
+   }
+   #about p {
+    font-size: 0.9rem;
+    color: rgba(255, 255, 255, 0.9);
+   }
+   #about-container {
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+   }
+}
+
+@media (max-width: 960px) {
+   #about {
+    padding-top: 150px;
+    background-position-y: 20%;
+   }
+   #navbar{
+        display: none;
+    }
+    #header_social_links i{
+        display: none;
+    }
+    .mobile-nav-toggle{
+        display: block;
+    }
 }

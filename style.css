@@ -6,6 +6,26 @@
     transition: all 0.5s ease;
 }
 
+.button {
+    border: 2px solid #ffffff;
+    padding: 8px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: rgba(100, 100, 100, 1);
+    border-radius: 20px;
+    font-family: "red rose", sans-serif;
+    font-size: 1.1rem;
+    width: fit-content;
+    margin-top: 15px;
+}
+
+.button:hover {
+    background-color: rgba(55, 55, 55, 1);
+    cursor: pointer;
+    color: orange;
+    border-color: orange;
+}
+
 /* header styling*/
 
 #header {
@@ -48,12 +68,12 @@
 }
 
 .whatsapp:hover {
-    color: green;
+    color: rgba(0, 130, 0, 1);
     transform: scale(1.2);
 }
 
 .telephone:hover {
-    color: greenyellow;
+    color: rgba(0, 200, 0, 1);
     transform: scale(1.2);
 }
 
@@ -81,13 +101,14 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position-y: 20%;
-    height: 150vh;
+    height: 100vh;
     width: 100%;
     box-sizing: border-box;
 }
 
 #hero-container {
     max-width: 650px;
+    height: fit-content;
     padding: 10px 30px;
     background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.015), rgba(0, 0, 0, 0.08), rgba(0, 0, 0, 0.02));
 }   
@@ -109,8 +130,8 @@
 
 @media (max-width: 992px) {
    #hero {
-    height: 150vh;
-    padding-top: 300px; 
+    padding-top: 280px;
+    height: 150vh; 
    }
     #hero h1 {
     font-size: 1.6rem;
@@ -120,7 +141,7 @@
     color: rgba(255, 255, 255, 0.9);
    }
    #hero-container {
-    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4));
+    background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.02), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.02));
    }
 }
 
@@ -128,6 +149,54 @@
    #hero {
     height: 100vh;
     background-position-x: -400px;
-    padding-top: 480px;
+    padding-top: 380px;
+    text-align: center;
    }
+   .button {
+    margin: 15px auto;
+    font-size: 1rem;
+   }
+}
+
+/*About Me styling*/
+
+#about_container {
+    height: fit-content;
+    padding: 100px 0px;
+    color: #ffffff;
+    font-family: "sarabun", sans-serif;
+}
+
+#about {
+    background-color: rgba(155, 155, 155, 1)    ;
+}
+
+#about h2 {
+    font-family: "sansation", sans-serif;
+    font-size: 3rem;
+}
+
+#about p {
+    font-size: 1rem;
+}
+
+.about-content {
+    max-width: 800px;
+    margin: 35px auto;
+}
+
+@media (max-width: 992px) {
+    #about h2 {
+        font-size: 1.5rem;
+    }
+    #about p {
+        font-size: 0.7rem;
+    }
+    .about-content {
+        padding: 0px 10px;
+    }
+    #about_container {
+        padding: 50px 0px;
+
+    }
 }

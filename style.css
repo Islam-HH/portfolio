@@ -37,11 +37,11 @@
     font-size: 1.1rem;
 }
 
-#header_container {
+#header-container {
     height: 100px;
 }
 
-#header_social_links {
+#header-social-links {
     height: 100px;
 }
 
@@ -85,7 +85,7 @@
     #navbar{
         display: none;
     }
-    #header_social_links i{
+    #header-social-links i{
         display: none;
     }
     .mobile-nav-toggle{
@@ -160,7 +160,7 @@
 
 /*About Me styling*/
 
-#about_container {
+#about-container {
     height: fit-content;
     padding: 100px 0px;
     color: #ffffff;
@@ -195,8 +195,18 @@
     .about-content {
         padding: 0px 10px;
     }
-    #about_container {
+    #about-container {
         padding: 50px 0px;
 
     }
+}
+
+/*Skills Styling*/
+
+.skill {
+    border: 3px solid rgba(255, 155, 0, 1);
+    border-radius: 15px;
+}
+.skill img {
+    max-width: 200px;
 }

@@ -206,7 +206,88 @@
 .skill {
     border: 3px solid rgba(255, 155, 0, 1);
     border-radius: 15px;
+    height: 300px;
 }
+
 .skill img {
     max-width: 200px;
+}
+
+#skills-container {
+    padding: 50px 0px;
+    height: fit-content;
+}
+
+#skills-container h1 {
+    font-family: "sansation", sans-serif;
+    font-size: 3rem;
+}
+
+#languages h2, h3 {
+    font-family: "sarabun", sans-serif;
+}
+
+#tools-and-tech h2, h3 {
+    font-family: "sarabun", sans-serif;
+}
+
+#tools-and-tech img {
+    max-width: 100px;
+}
+
+.tool {
+    border: 3px solid rgba(255, 155, 0, 1);
+    border-radius: 15px;
+    padding: 45px 0px;
+    height: 200px;
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+
+.tool h3 {
+    font-family: "sarabun", sans-serif;
+    font-size: 1.2rem;
+    margin-top: 10px;
+    bottom: -15px;
+    background-color: rgba(55, 55, 55, 1);
+    color: #ffffff;
+    border-radius: 25px;
+    width: fit-content;
+    text-align: center;
+    padding: 5px 25px;
+    border: 2px solid rgba(255, 155, 0, 1);
+    margin-top: 150px;
+}
+
+.tool:hover {
+    padding: 10px 0px;
+    background-color: rgba(255, 255, 240, 1);
+}
+.tool:hover h3 {
+    margin-top: 10px;
+}
+
+.tool:hover img {
+    transform: scale(1.2);
+}
+
+@media (max-width: 992px) {
+    #skills-container {
+        padding: 50px 65px;
+        text-align: center;
+    }
+    .tool {
+        height: 150px;
+        padding: 30px 0px;
+    }
+    .tool h3 {
+        font-size: 0.7rem;
+        padding: 5px 9px;
+    }
+    .tool:hover h3 {
+        margin-top: 20px;
+    }
+    #tools-and-tech img {
+        max-width: 80px;
+    }
 }

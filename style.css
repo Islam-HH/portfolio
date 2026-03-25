@@ -234,6 +234,10 @@
     font-family: "sarabun", sans-serif;
 }
 
+.language {
+    box-shadow: 4px 4px 5px 1px rgba(0, 0, 0, 0.7);
+}
+
 .tool img {
     max-width: 50px;
 }
@@ -265,6 +269,7 @@
 .tool:hover {
     padding: 10px 0px;
     background-color: rgba(255, 255, 240, 1);
+    box-shadow: 0px 0px 5px 7px rgba(255, 155, 0, 0.5);
 }
 .tool:hover h3 {
     margin-top: 10px;

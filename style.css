@@ -1,3 +1,5 @@
+/* General Styling*/
+
 * {
     margin: 0px;
     padding: 0px;
@@ -25,6 +27,17 @@
     color: orange;
     border-color: orange;
 }
+
+.hide {
+    visibility: hidden;
+}
+
+@media (max-width: 992px) {
+   .mobile-hidden {
+        display: none;
+    } 
+}
+
 
 /* header styling*/
 
@@ -82,18 +95,12 @@
 }
 
 @media (max-width: 960px) {
-    #navbar{
-        display: none;
-    }
-    #header-social-links i{
-        display: none;
-    }
     .mobile-nav-toggle{
         display: block;
     }
 }
 
-/*hero section styling*/
+/*hero-section styling*/
 
 #hero {
     padding-top: 350px;
@@ -158,7 +165,7 @@
    }
 }
 
-/*About Me styling*/
+/*About-Me styling*/
 
 #about-container {
     height: fit-content;
@@ -206,11 +213,11 @@
 .skill {
     border: 3px solid rgba(255, 155, 0, 1);
     border-radius: 15px;
-    height: 300px;
+    height: 200px;
 }
 
 .skill img {
-    max-width: 200px;
+    max-width: 100px;
 }
 
 #skills-container {
@@ -223,30 +230,26 @@
     font-size: 3rem;
 }
 
-#languages h2, h3 {
+.skills h2, h3 {
     font-family: "sarabun", sans-serif;
 }
 
-#tools-and-tech h2, h3 {
-    font-family: "sarabun", sans-serif;
-}
-
-#tools-and-tech img {
-    max-width: 100px;
+.tool img {
+    max-width: 50px;
 }
 
 .tool {
     border: 3px solid rgba(255, 155, 0, 1);
     border-radius: 15px;
     padding: 45px 0px;
-    height: 200px;
+    height: 150px;
     transition: all 0.3s ease;
     overflow: hidden;
 }
 
 .tool h3 {
     font-family: "sarabun", sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin-top: 10px;
     bottom: -15px;
     background-color: rgba(55, 55, 55, 1);
@@ -254,7 +257,7 @@
     border-radius: 25px;
     width: fit-content;
     text-align: center;
-    padding: 5px 25px;
+    padding: 5px 10px;
     border: 2px solid rgba(255, 155, 0, 1);
     margin-top: 150px;
 }
@@ -277,8 +280,8 @@
         text-align: center;
     }
     .tool {
-        height: 150px;
-        padding: 30px 0px;
+        height: 130px;
+        padding: 35px 0px;
     }
     .tool h3 {
         font-size: 0.7rem;
@@ -287,7 +290,8 @@
     .tool:hover h3 {
         margin-top: 20px;
     }
-    #tools-and-tech img {
+    .tech-skills img {
         max-width: 80px;
     }
 }
+

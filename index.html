@@ -10,7 +10,7 @@
 <body>
     <header id="header" class="container-fluid fixed-top d-flex align-items-center">
         <section id="header-container" class="container d-flex align-items-center justify-content-between">
-            <nav id="navbar">
+            <nav id="navbar" class="d-none d-lg-inline-block">
                 <ul class="d-flex flex-row align-items-center justify-content-start mb-0 ps-0">
                     <li><a class="nav-link pe-4" href="#about">About</a></li>
                     <li><a class="nav-link px-4" href="#skills">Skills</a></li>
@@ -19,10 +19,10 @@
                 </ul>
             </nav>
             <div id="header-social-links" class="d-flex container justify-content-end align-items-center">
-                <a href="https://www.facebook.com/share/1CFMFi3AJy/" target="_blank"><i class="bi bi-facebook m-3 facebook navicons"></i></a>
-                <a href="https://github.com/Islam-HH" target="_blank"><i class="bi bi-github m-3 github navicons"></i></a>
-                <a href="https://wa.me/qr/5UMRVWLSQTBUO1" target="_blank"><i class="bi bi-whatsapp m-3 whatsapp navicons"></i></a>
-                <a href="tel:+201147387389"><i class="bi bi-telephone m-3 telephone navicons"></i></a>
+                <a href="https://www.facebook.com/share/1CFMFi3AJy/" target="_blank"><i class="bi bi-facebook m-3 facebook navicons d-none d-lg-inline-block"></i></a>
+                <a href="https://github.com/Islam-HH" target="_blank"><i class="bi bi-github m-3 github navicons d-none d-lg-inline-block"></i></a>
+                <a href="https://wa.me/qr/5UMRVWLSQTBUO1" target="_blank"><i class="bi bi-whatsapp m-3 whatsapp navicons d-none d-lg-inline-block"></i></a>
+                <a href="tel:+201147387389"><i class="bi bi-telephone m-3 telephone navicons d-none d-lg-inline-block"></i></a>
             </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
             <div id="mobile-nav-menu">
@@ -71,69 +71,101 @@
         <section id="skills">
             <div id="skills-container" class="container d-flex flex-column justify-content-around">
                 <h1 class="section-title d-flex align-items-center justify-content-around">Skills</h1>
-                <div id="languages">
+                <div id="languages" class="skills">
                     <h2>Languages:</h2>
                     <div class="row justify-content-around mb-5">
-                        <div class="col-lg-3 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center">
+                        <div class="col-lg-1 d-none d-lg-inline-block"></div>
+                        <div class="col-lg-2 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center">
                             <img src="./assets/images/html.png" alt="HTML5_logo">
                             <h3>HTML</h3>
                         </div>
-                        <div class="col-lg-3 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center">
+                        <div class="col-lg-2 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center">
                             <img src="./assets/images/css.png" alt="CSS_Logo">
                             <h3>CSS</h3>
                         </div>
-                        <div class="col-lg-3 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center">
+                        <div class="col-lg-2 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center">
                             <img src="./assets/images/javascript.png" alt="JavaScript_logo">
                             <h3>JavaScript</h3>
                         </div>
+                        <div class="col-lg-1 d-none d-lg-inline-block"></div>
                     </div>
                 </div>
-                <div id="tools-and-tech">
-                    <h2>Tools & Tech:</h2>
-                    <div class="row justify-content-around gy-4 mt-3">
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/vscode.png" alt="VS Code logo">
-                            <h3>VS Code</h3>
+                <div class="row">
+                    <div id="libraries-and-frameworks" class="skills container py-3 col-lg-4">
+                        <h2 class="text-center">Libraries & Frameworks:</h2>
+                        <div class="row justify-content-around gy-4 mt-3">
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
+                                <h3>Bootstrap</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/react.png" alt="React logo">
+                                <h3>React</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/jqurey.png" alt="JQuery logo">
+                                <h3>JQuery</h3>
+                            </div>
                         </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/git.png" alt="Git logo">
-                            <h3>Git</h3>
+                    </div>
+                    <div id="data-and-api" class="skills container py-3 col-lg-4">
+                        <h2 class="text-center">Data Handling & APIs:</h2>
+                        <div class="row justify-content-around gy-4 mt-3">
+                            <div class="col-lg-1 col-5 me-1 hide d-none d-lg-flex"></div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/json.png" alt="JSON logo">
+                                <h3>JSON</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/ajax.png" alt="AJAX logo">
+                                <h3>AJAX</h3>
+                            </div>
+                            <div class="col-lg-1 col-5 me-1 hide d-none d-lg-flex"></div>
                         </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/GitHub.png" alt="GitHub logo">
-                            <h3>GitHub</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <div id="design-and-graphics" class="skills container py-3 col-lg-4">
+                        <h2 class="text-center">Design & Graphics:</h2>
+                        <div class="row justify-content-around gy-4 mt-3">
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/adobe-illustrator.png" alt="Adobe Illustrator logo">
+                                <h3>Adobe Illustrator</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/adobe-photoshop.png" alt="Adobe Photoshop">
+                                <h3>Adobe Photoshop</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/figma.png" alt="Figma logo">
+                                <h3>Figma</h3>
+                            </div>
                         </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/adobe-illustrator.png" alt="Adobe Illustrator logo">
-                            <h3>Adobe Illustrator</h3>
+                    </div>
+                    <div id="tools-and-version-control" class="skills container py-3 col-lg-4">
+                        <h2 class="text-center">Tools & Version Control:</h2>
+                        <div class="row justify-content-around gy-4 mt-3">
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/vscode.png" alt="VS Code logo">
+                                <h3>VS Code</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/git.png" alt="Git logo">
+                                <h3>Git</h3>
+                            </div>
+                            <div class="col-lg-3 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                                <img src="./assets/images/GitHub.png" alt="GitHub logo">
+                                <h3>GitHub</h3>
+                            </div>
                         </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/adobe-photoshop.png" alt="Adobe Photoshop">
-                            <h3>Adobe Photoshop</h3>
-                        </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/bootstrap.png" alt="Bootstrap logo">
-                            <h3>Bootstrap</h3>
-                        </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/figma.png" alt="Figma logo">
-                            <h3>Figma</h3>
-                        </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/ajax.png" alt="AJAX logo">
-                            <h3>AJAX</h3>
-                        </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/jqurey.png" alt="JQuery logo">
-                            <h3>JQuery</h3>
-                        </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
+                    </div>
+                </div>
+                <div id="content-management" class="skills container py-3">
+                    <h2 class="text-center">Content Management:</h2>
+                    <div class="row mt-3 justify-content-center">
+                        <div class="col-lg-1 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
                             <img src="./assets/images/wordpress.png" alt="WordPress logo">
                             <h3>WordPress</h3>
-                        </div>
-                        <div class="col-lg-2 col-5 me-1 px-lg-2 me-lg-1 text-center d-flex flex-column justify-content-around align-items-center tool">
-                            <img src="./assets/images/json.png" alt="JSON logo">
-                            <h3>JSON</h3>
                         </div>
                     </div>
                 </div>

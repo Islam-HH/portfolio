@@ -39,7 +39,7 @@ function initProjectDisplay() {
         if (!trigger || !enlarged) return;
         trigger.addEventListener('click', (e) => {
             e.stopPropagation();
-            enlarged.classList.replace('d-none', 'd-flex');
+            enlarged.classList.replace('projectHidden', 'd-flex');
             main.classList.add('blurred');
         });
     };
@@ -52,7 +52,7 @@ function initProjectDisplay() {
         btn.addEventListener('click', (e) => {
             e.stopPropagation();
             const enlarged = btn.closest('.projectEnlarged');
-            enlarged.classList.replace('d-flex', 'd-none');
+            enlarged.classList.replace('d-flex', 'projectHidden');
             main.classList.remove('blurred');
         });
     });
@@ -119,7 +119,7 @@ window.addEventListener('scroll', () => {
 window.addEventListener('click', (e) => {
     const activeProject = document.querySelector('.projectEnlarged.d-flex');
     if (activeProject && !activeProject.contains(e.target)) {
-        activeProject.classList.replace('d-flex', 'd-none');
+        activeProject.classList.replace('d-flex', 'projectHidden');
         main.classList.remove('blurred');
     }
 

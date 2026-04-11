@@ -37,7 +37,6 @@ h4 {
     border-color: orange;
 }
 
-/* Blur everything except the active project view */
 .blurred section:not(#projects), 
 .blurred #projects > *:not(.projectEnlarged) {
     filter: blur(8px);
@@ -450,6 +449,14 @@ main {
 .close-btn:hover {
     color: rgba(255, 155, 0, 1);
     cursor: pointer;
+}
+
+.projectHidden {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 0px;
+    box-shadow: none;
 }
 
 

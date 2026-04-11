@@ -25,6 +25,7 @@
     "@fontsource/red-rose": "^5.2.7",
     "@fontsource/sansation": "^5.2.2",
     "@fontsource/sarabun": "^5.2.8",
+    "aos": "^2.3.4",
     "bootstrap": "^5.3.8",
     "bootstrap-icons": "^1.13.1"
   }

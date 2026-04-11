@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Islam Hesham | Front-End Developer Portfolio</title>
     <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="assets/favicon/site.webmanifest">
 
 </head>
 <body>
+    
     <header id="header" class="container-fluid fixed-top d-flex align-items-center">
         <section id="header-container" class="container d-flex align-items-center justify-content-between">
+            <div id="logo">
+                <a href="#"><img src="assets/favicon/android-chrome-512x512.png" alt="logo"></a>
+            </div>
             <nav id="navbar" class="d-none d-lg-inline-block">
                 <ul class="d-flex flex-row align-items-center justify-content-start mb-0 ps-0">
                     <li><a class="nav-link pe-4" href="#about">About</a></li>
@@ -25,16 +33,16 @@
                 <a href="tel:+201147387389"><i class="bi bi-telephone m-3 telephone navicons d-none d-lg-inline-block"></i></a>
             </div>
             <i class="bi bi-list mobile-nav-toggle"></i>
-            <div id="mobile-nav-menu">
-                <li><a href="" class="mobile-nav-link"></a></li>
-                <li><a href="" class="mobile-nav-link"></a></li>
-                <li><a href="" class="mobile-nav-link"></a></li>
-                <li><a href="" class="mobile-nav-link"></a></li>
+            <div id="mobile-nav-menu" class="d-none flex-column align-items-center p-4 justify-content-around">
+                <li><a href="#about" class="mobile-nav-link">About</a></li>
+                <li><a href="#skills" class="mobile-nav-link">Skills</a></li>
+                <li><a href="#projects" class="mobile-nav-link">Projects</a></li>
+                <li><a href="#footer" class="mobile-nav-link">Contacts</a></li>
             </div>
         </section>
     </header>
 
-    <main id="main">
+    <main id="main" class="container-fluid p-0">
         <section id="hero" class="container-fluid">
             <div class="container d-flex flex-column justify-content-start mt-3">
                 <div id="hero-container" class="d-flex flex-column justify-content-around">
@@ -75,15 +83,15 @@
                     <h2>Languages:</h2>
                     <div class="row justify-content-around mb-5">
                         <div class="col-lg-1 d-none d-lg-inline-block"></div>
-                        <div class="col-lg-2 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center language">
+                        <div class="col-lg-2 col-5 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center language">
                             <img src="./assets/images/html.png" alt="HTML5_logo">
                             <h3>HTML</h3>
                         </div>
-                        <div class="col-lg-2 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center language">
+                        <div class="col-lg-2 col-5 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center language">
                             <img src="./assets/images/css.png" alt="CSS_Logo">
                             <h3>CSS</h3>
                         </div>
-                        <div class="col-lg-2 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center language">
+                        <div class="col-lg-2 col-5 my-4 skill text-center p-2 d-flex flex-column justify-content-around align-items-center language">
                             <img src="./assets/images/javascript.png" alt="JavaScript_logo">
                             <h3>JavaScript</h3>
                         </div>
@@ -178,10 +186,10 @@
             <div id="projects-container" class="container d-flex flex-column justify-content-around align-items-center mt-3">   
                 <h2 class="section-title">Projects</h2>
                 <div class="row justify-content-around w-100 my-3 my-lg-5">
-                    <div class="col-lg-6 project p-0 text-center w-auto">
+                    <div id="wonderFlow" class="d-flex flex-row col-lg-6 project p-0 text-center w-auto">
                         <img src="./assets/images/wonderflow.png" alt="WonderFlow traveling agency">
                     </div>
-                    <div class="col-lg-6 project p-0 text-center w-auto">
+                    <div id="sizzle" class="d-flex flex-row col-lg-6 project p-0 text-center w-auto">
                         <img src="./assets/images/sizzle.png" alt="Sizzle Fine-Dining">
                     </div>
                 </div>
@@ -189,7 +197,7 @@
         </section>
         
         <section id="footer" class="container-fluid">
-            <div id="footer-container" class="container d-flex flex-column justify-content-around py-3 h-100">
+            <div id="footer-container" class="container d-flex flex-column align-items-center justify-content-around py-3 h-100">
                 <div class="row w-100 justify-content-center">
                     <div class="col-lg-6 d-flex justify-content-center">
                         <h3>Islam Hesham | Front-End Developer</h3>
@@ -214,6 +222,23 @@
             </div>
         </section>
     </main>
+
+    <div id="wonderFlowEnlarged" class="projectEnlarged d-none flex-row col-lg-6 p-0 text-center w-auto">
+        <img src="./assets/images/wonderflow.png" alt="WonderFlow traveling agency">
+        <div id="wonderFlowDetails" class="projectDetails d-flex flex-column align-items-center justify-content-around">
+            <h5 id="wonderFlowGitHubLink"><a href="https://github.com/Islam-HH/travelRecommendation.git" target="_blank"><i class="bi bi-github">  </i>GitHub Repository</a></h5>
+            <h5 id="wonderFlowLiveLink"><a href="https://islam-hh.github.io/travelRecommendation/" target="_blank"><i class="bi bi-browser-chrome">  </i>Visit WonderFlow</a></h5>
+        </div>
+        <i class="bi bi-x-circle close-btn"></i>
+    </div>
+    <div id="sizzleEnlarged" class="projectEnlarged d-none flex-row col-lg-6 p-0 text-center w-auto">
+        <img src="./assets/images/sizzle.png" alt="Sizzle Fine-Dining">
+        <div id="sizzleDetails" class="projectDetails d-flex flex-column align-items-center justify-content-around">
+            <h5 id="sizzleGitHubLink"><a href="https://github.com/Islam-HH/sizzle-fine-dining.git" target="_blank"><i class="bi bi-github">  </i>GitHub Repository</a></h5>
+            <h5 id="sizzleLiveLink"><a href="https://islam-hh.github.io/sizzle-fine-dining/" target="_blank"><i class="bi bi-browser-chrome">  </i>Visit Sizzle</a></h5>
+        </div>
+        <i class="bi bi-x-circle close-btn"></i>  
+    </div>
 
 
 

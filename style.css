@@ -152,7 +152,7 @@ main {
     text-decoration: none;
 }
 
-@media (max-width: 960px) {
+@media (max-width: 992px) {
     .mobile-nav-toggle{
         display: block;
     }
@@ -196,7 +196,7 @@ main {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-@media (max-width: 992px) {
+@media (max-width: 960px) {
    #hero {
     padding-top: 280px;
     height: 150vh; 
@@ -217,11 +217,22 @@ main {
    #hero {
     height: 100vh;
     background-position-x: -400px;
-    padding-top: 380px;
+    padding-top: 300px;
     text-align: center;
    }
    .button {
     margin: 15px auto;
+    font-size: 1rem;
+   }
+}
+@media (max-width: 1440px) {
+    #hero {
+        padding-top: 190px;
+    }
+    #hero h1 {
+    font-size: 2.6rem;
+   }
+   #hero p {
     font-size: 1rem;
    }
 }
@@ -370,6 +381,15 @@ main {
     }
 }
 
+@media (max-width: 768px) {
+    .skill img {
+        width: 60px;
+    }
+    .skill h3 {
+        font-size: 0.9rem;
+    }
+}
+
 /*Projects Styling*/
 
 
@@ -393,8 +413,8 @@ main {
     background-color: rgba(0, 0, 0, 0.5);
     padding: 15px;
     width: 250px;
-    height: 200px;
-    top: 250px;
+    height: 25%;
+    top: 37.5%;
     position: absolute;
     right: 0px;
     border-top-left-radius: 25px;
@@ -414,7 +434,7 @@ main {
 }
 
 .projectEnlarged {
-    height: 700px;
+    height: fit-content;
     border: 3px solid rgba(255, 155, 0, 1);
     border-radius: 25px;
     overflow: hidden;
@@ -470,7 +490,7 @@ main {
     }
     .projectEnlarged {
         height: 40vh;
-        overflow: auto;
+        overflow: hidden;
     }
     .close-btn {
         font-size: 24px;
@@ -491,6 +511,73 @@ main {
     overflow: hidden;
     border: 0px;
     box-shadow: none;
+    }
+}
+
+@media (max-width: 1440px) {
+    .projectEnlarged {
+        height: fit-content;
+        overflow: auto;
+    }
+    .projectHidden {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 0px;
+    box-shadow: none;
+    }
+    .projectDetails {
+        top: 30%;
+    }
+    .projectDetails {
+        height: 30%;
+        top: 35%;
+    }
+}
+
+@media (max-width: 450px) {
+    .projectDetails {
+        width: 100%;
+        top: -35%;
+        height: 170%;
+    }
+    .projectEnlarged {
+        height: 20vh;
+        overflow: hidden;
+    }
+     .projectHidden {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        border: 0px;
+        box-shadow: none;
+    }
+    .close-btn {
+        font-size: 20px;
+        right: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .projectDetails {
+        width: 100%;
+        top: -35%;
+        height: 170%;
+    }
+    .projectEnlarged {
+        height: 50vh;
+        overflow: hidden;
+    }
+     .projectHidden {
+        width: 0px;
+        height: 0px;
+        overflow: hidden;
+        border: 0px;
+        box-shadow: none;
+    }
+    .close-btn {
+        font-size: 25px;
+        right: 20px;
     }
 }
 

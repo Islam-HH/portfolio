@@ -485,6 +485,13 @@ main {
     .projectDetails a {
         font-size: 18px;
     }
+    .projectHidden {
+    width: 0px;
+    height: 0px;
+    overflow: hidden;
+    border: 0px;
+    box-shadow: none;
+    }
 }
 
 /*Contact Styling*/

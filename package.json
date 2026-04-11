@@ -4,7 +4,10 @@
   "description": "Welcome to my portfolio! I'm a passionate and detail-oriented front-end developer, making a career transition from the world of tax accounting. I have a passion for building responsive, user-friendly, and visually appealing web applications.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "repository": {
     "type": "git",
@@ -13,7 +16,7 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "type": "commonjs",
+  "type": "module",
   "bugs": {
     "url": "https://github.com/Islam-HH/-portfolio/issues"
   },
